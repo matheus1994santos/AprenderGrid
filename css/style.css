@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.grid {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: grid; 
+}
+
+
+
+/* --------------------Site layout ----------- */
+.design {
+	grid-template-areas: 
+	"header header header"
+	"sidenav content advertising"
+	"sidenav footer footer"
+	 ;
+}
+
+.S1 {
+	margin: 2px;
+	/* background: tomato; */
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.header {
+	grid-area: header;
+}
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+.content {
+	grid-area: content;
+}
+
+.advertising {
+	grid-area: advertising;
+}
+
+.footer{
+	grid-area: footer;
+}
+
+/* --------------------Site layout ----------- */
+
+.header {
+	background: blue;
+	height: 60px;
+}
+
+.sidenav {
+	background: #008000;
+	height: 600px;
+}
+
+.content {
+	background: yellow;
+	height: 500px;
+}
+
+.advertising {
+	background: palevioletred;
+	height: 500px;
+}
+
+.footer{
+	background: red;
+	height: 96px;
+}
